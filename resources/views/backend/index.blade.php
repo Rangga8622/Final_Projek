@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>RoyalUI Admin</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+  <link rel="stylesheet" href="{{ asset('backend/vendors/ti-icons/css/themify-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('backend/vendors/base/vendor.bundle.base.css') }}">
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ asset('backend/css/style.css') }}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="shortcut icon" href="{{ asset('backend/images/favicon.png') }}" />
 </head>
 
 <body>
@@ -43,9 +43,10 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo me-5" href="index.html"><img src="images/logo.svg" class="me-2"
+        <a class="navbar-brand brand-logo me-5" href="index.html"><img src="{{ asset('backend/images/logo.svg') }}"
+            class="me-2" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{ asset('backend/images/logo-mini.svg') }}"
             alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -636,20 +637,20 @@
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-  <script src="vendors/base/vendor.bundle.base.js"></script>
+  <script src="{{ asset('backend/vendors/base/vendor.bundle.base.js') }}"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
-  <script src="vendors/chart.js/Chart.min.js"></script>
-  <script src="js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="{{ asset('backend/vendors/chart.js/Chart.min.js') }}"></script>
+  <script src="{{ asset('backend/js/jquery.cookie.js') }}" type="text/javascript"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/hoverable-collapse.js"></script>
-  <script src="js/template.js"></script>
-  <script src="js/todolist.js"></script>
+  <script src="{{ asset('backend/js/off-canvas.js') }}') }}"></script>
+  <script src="{{ asset('backend/js/hoverable-collapse.js') }}"></script>
+  <script src="{{ asset('backend/js/template.js') }}"></script>
+  <script src="{{ asset('backend/js/todolist.js') }}"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="js/dashboard.js"></script>
+  <script src="{{ asset('backend/js/dashboard.js') }}"></script>
   <!-- End custom js for this page-->
 </body>
 
