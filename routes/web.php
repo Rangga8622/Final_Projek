@@ -29,3 +29,8 @@ Route::get('/about', function () {
 Route::get('/service', function () {
     return view('frontend.service');
 });
+
+Route::get('/navbar', function () {
+    return view('backend.index');
+});
+
