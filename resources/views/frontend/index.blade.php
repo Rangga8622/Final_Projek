@@ -26,18 +26,19 @@
 
     @include('frontend.header')
 
+    <main>
+        @yield('content')
+        <!-- Blog -->
+        <main>
 
-    @yield('content')
-
-    <!-- Blog -->
 
 
 
-    <script src="{{ asset('frontend/js/jquery-3.5.1.min.js') }}"></script>
-    <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('frontend/js/google-maps.js') }}"></script>
-    <script src="{{ asset('frontend/vendor/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('frontend/js/theme.js') }}"></script>
+            <script src="{{ asset('frontend/js/jquery-3.5.1.min.js') }}"></script>
+            <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
+            <script src="{{ asset('frontend/js/google-maps.js') }}"></script>
+            <script src="{{ asset('frontend/vendor/wow/wow.min.js') }}"></script>
+            <script src="{{ asset('frontend/js/theme.js') }}"></script>
 
 </body>
 
